@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#F6F5FD" />
+    <title>Nosso jogo</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23EC3F7C' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        background: #f6f5fd;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 24px;
+        font-family: "Nunito Sans", system-ui, sans-serif;
+        color: #2a2840;
+      }
+      main {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 14px;
+      }
+      .coin {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 0 #e3e1fa;
+        margin-bottom: 10px;
+        animation: beat 1.6s ease-in-out infinite;
+      }
+      h1 {
+        margin: 0;
+        font-family: "Fredoka", system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.05;
+      }
+      p {
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.45;
+        color: #5b5873;
+      }
+      .play {
+        margin-top: 18px;
+        width: 100%;
+        height: 56px;
+        border-radius: 18px;
+        background: #ec3f7c;
+        color: #fff;
+        font-family: "Fredoka", system-ui, sans-serif;
+        font-weight: 600;
+        font-size: 19px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 0 #b8245a;
+      }
+      .play:active {
+        transform: translateY(3px);
+        box-shadow: 0 2px 0 #b8245a;
+      }
+      .play:focus-visible {
+        outline: 3px solid #5646d8;
+        outline-offset: 3px;
+      }
+      @keyframes beat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        15% {
+          transform: scale(1.08);
+        }
+        30% {
+          transform: scale(1);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .coin {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="coin" aria-hidden="true">
+        <svg width="52" height="52" viewBox="0 0 24 24">
+          <path
+            fill="#EC3F7C"
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+      </div>
+      <h1>Nosso jogo</h1>
+      <p>Uma pequena viagem pela nossa história.</p>
+      <a class="play" href="https://nosso-jogo-d8lk.onrender.com/?k=01082026"
+        >Jogar ❤</a
+      >
+    </main>
+  </body>
+</html>
